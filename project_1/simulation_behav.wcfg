@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_Correlation_Top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_Correlation_Top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="563.852406 us"></ZoomStartTime>
+      <ZoomEndTime time="2,645.296852 us"></ZoomEndTime>
+      <Cursor1Time time="2,298.389444 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="216"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="63" />
+   <wave_markers>
+      <marker time="1250000000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/ipClk" type="logic">
+      <obj_property name="ElementShortName">ipClk</obj_property>
+      <obj_property name="ObjectShortName">ipClk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/ipRst_" type="logic">
+      <obj_property name="ElementShortName">ipRst_</obj_property>
+      <obj_property name="ObjectShortName">ipRst_</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/ipKey" type="logic">
+      <obj_property name="ElementShortName">ipKey</obj_property>
+      <obj_property name="ObjectShortName">ipKey</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/op_clk_a" type="logic">
+      <obj_property name="ElementShortName">op_clk_a</obj_property>
+      <obj_property name="ObjectShortName">op_clk_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/ip_data_a" type="array">
+      <obj_property name="ElementShortName">ip_data_a[11:0]</obj_property>
+      <obj_property name="ObjectShortName">ip_data_a[11:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/ip_tr_a" type="logic">
+      <obj_property name="ElementShortName">ip_tr_a</obj_property>
+      <obj_property name="ObjectShortName">ip_tr_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/op_clk_b" type="logic">
+      <obj_property name="ElementShortName">op_clk_b</obj_property>
+      <obj_property name="ObjectShortName">op_clk_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/ip_data_b" type="array">
+      <obj_property name="ElementShortName">ip_data_b[11:0]</obj_property>
+      <obj_property name="ObjectShortName">ip_data_b[11:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/ip_tr_b" type="logic">
+      <obj_property name="ElementShortName">ip_tr_b</obj_property>
+      <obj_property name="ObjectShortName">ip_tr_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Correltor_Inst/dataForCorreltor_1_s" type="array">
+      <obj_property name="ElementShortName">dataForCorreltor_1_s[0:3][11:0]</obj_property>
+      <obj_property name="ObjectShortName">dataForCorreltor_1_s[0:3][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/data_a_from_adc" type="array">
+      <obj_property name="ElementShortName">data_a_from_adc[11:0]</obj_property>
+      <obj_property name="ObjectShortName">data_a_from_adc[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/data_b_from_adc" type="array">
+      <obj_property name="ElementShortName">data_b_from_adc[11:0]</obj_property>
+      <obj_property name="ObjectShortName">data_b_from_adc[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/numOfAverage" type="array">
+      <obj_property name="ElementShortName">numOfAverage[7:0]</obj_property>
+      <obj_property name="ObjectShortName">numOfAverage[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/numOfdata" type="array">
+      <obj_property name="ElementShortName">numOfdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">numOfdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/clk100Mhz" type="logic">
+      <obj_property name="ElementShortName">clk100Mhz</obj_property>
+      <obj_property name="ObjectShortName">clk100Mhz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/clk_sample" type="array">
+      <obj_property name="ElementShortName">clk_sample[15:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_sample[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/txBpsEn" type="logic">
+      <obj_property name="ElementShortName">txBpsEn</obj_property>
+      <obj_property name="ObjectShortName">txBpsEn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/outRxData" type="array">
+      <obj_property name="ElementShortName">outRxData[7:0]</obj_property>
+      <obj_property name="ObjectShortName">outRxData[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/rxBpsEn" type="logic">
+      <obj_property name="ElementShortName">rxBpsEn</obj_property>
+      <obj_property name="ObjectShortName">rxBpsEn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/txDataIsReady" type="logic">
+      <obj_property name="ElementShortName">txDataIsReady</obj_property>
+      <obj_property name="ObjectShortName">txDataIsReady</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/dataForTx" type="array">
+      <obj_property name="ElementShortName">dataForTx[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dataForTx[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Correltor_Inst/\label_i[0].MultiplyAccumulate_inst /tdata1" type="array">
+      <obj_property name="ElementShortName">tdata1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tdata1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Correltor_Inst/\label_i[0].MultiplyAccumulate_inst /tdata2" type="array">
+      <obj_property name="ElementShortName">tdata2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tdata2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Correltor_Inst/\label_i[0].MultiplyAccumulate_inst /cnt" type="array">
+      <obj_property name="ElementShortName">cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Correltor_Inst/\label_i[0].MultiplyAccumulate_inst /abReg" type="array">
+      <obj_property name="ElementShortName">abReg[23:0]</obj_property>
+      <obj_property name="ObjectShortName">abReg[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/endOfConversion_a" type="logic">
+      <obj_property name="ElementShortName">endOfConversion_a</obj_property>
+      <obj_property name="ObjectShortName">endOfConversion_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/endOfConversion_b" type="logic">
+      <obj_property name="ElementShortName">endOfConversion_b</obj_property>
+      <obj_property name="ObjectShortName">endOfConversion_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Correltor_Inst/\label_i[0].MultiplyAccumulate_inst /accumulateOfData" type="array">
+      <obj_property name="ElementShortName">accumulateOfData[52:0]</obj_property>
+      <obj_property name="ObjectShortName">accumulateOfData[52:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Correltor_Inst/\label_i[0].MultiplyAccumulate_inst /endOfDelay2" type="logic">
+      <obj_property name="ElementShortName">endOfDelay2</obj_property>
+      <obj_property name="ObjectShortName">endOfDelay2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Correltor_Inst/chanDone" type="array">
+      <obj_property name="ElementShortName">chanDone[0:3]</obj_property>
+      <obj_property name="ObjectShortName">chanDone[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Correltor_Inst/oFrameDone" type="logic">
+      <obj_property name="ElementShortName">oFrameDone</obj_property>
+      <obj_property name="ObjectShortName">oFrameDone</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/frameDone" type="logic">
+      <obj_property name="ElementShortName">frameDone</obj_property>
+      <obj_property name="ObjectShortName">frameDone</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Correltor_Inst/\label_i[0].MultiplyAccumulate_inst /oMeanOfData_n" type="array">
+      <obj_property name="ElementShortName">oMeanOfData_n[23:0]</obj_property>
+      <obj_property name="ObjectShortName">oMeanOfData_n[23:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Uart_data_ready_inst/o_uart_trig" type="logic">
+      <obj_property name="ElementShortName">o_uart_trig</obj_property>
+      <obj_property name="ObjectShortName">o_uart_trig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Correltor_Inst/\label_i[0].MultiplyAccumulate_inst /oMeanOfData" type="array">
+      <obj_property name="ElementShortName">oMeanOfData[23:0]</obj_property>
+      <obj_property name="ObjectShortName">oMeanOfData[23:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/ordinal" type="array">
+      <obj_property name="ElementShortName">ordinal[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ordinal[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Correltor_Inst/meanOfData" type="array">
+      <obj_property name="ElementShortName">meanOfData[0:3][23:0]</obj_property>
+      <obj_property name="ObjectShortName">meanOfData[0:3][23:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/meanOfData" type="array">
+      <obj_property name="ElementShortName">meanOfData[23:0]</obj_property>
+      <obj_property name="ObjectShortName">meanOfData[23:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Uart_data_ready_inst/i_start_pulse" type="logic">
+      <obj_property name="ElementShortName">i_start_pulse</obj_property>
+      <obj_property name="ObjectShortName">i_start_pulse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Uart_data_ready_inst/i_uart_busy" type="logic">
+      <obj_property name="ElementShortName">i_uart_busy</obj_property>
+      <obj_property name="ObjectShortName">i_uart_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Uart_data_ready_inst/i_uart_done" type="logic">
+      <obj_property name="ElementShortName">i_uart_done</obj_property>
+      <obj_property name="ObjectShortName">i_uart_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Uart_data_ready_inst/i_data" type="array">
+      <obj_property name="ElementShortName">i_data[23:0]</obj_property>
+      <obj_property name="ObjectShortName">i_data[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Uart_data_ready_inst/o_uart_data" type="array">
+      <obj_property name="ElementShortName">o_uart_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_uart_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Uart_data_ready_inst/o_uart_trig" type="logic">
+      <obj_property name="ElementShortName">o_uart_trig</obj_property>
+      <obj_property name="ObjectShortName">o_uart_trig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Uart_8bits_inst/i_trig" type="logic">
+      <obj_property name="ElementShortName">i_trig</obj_property>
+      <obj_property name="ObjectShortName">i_trig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/uart_tx_trig" type="logic">
+      <obj_property name="ElementShortName">uart_tx_trig</obj_property>
+      <obj_property name="ObjectShortName">uart_tx_trig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Uart_data_ready_inst/o_ordinal" type="array">
+      <obj_property name="ElementShortName">o_ordinal[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_ordinal[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Uart_data_ready_inst/o_transmitting" type="logic">
+      <obj_property name="ElementShortName">o_transmitting</obj_property>
+      <obj_property name="ObjectShortName">o_transmitting</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Uart_data_ready_inst/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Uart_data_ready_inst/data_buf" type="array">
+      <obj_property name="ElementShortName">data_buf[23:0]</obj_property>
+      <obj_property name="ObjectShortName">data_buf[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Uart_data_ready_inst/byte_cnt" type="array">
+      <obj_property name="ElementShortName">byte_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">byte_cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Uart_data_ready_inst/uart_done_dly" type="logic">
+      <obj_property name="ElementShortName">uart_done_dly</obj_property>
+      <obj_property name="ObjectShortName">uart_done_dly</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Uart_data_ready_inst/start_pulse_dly" type="logic">
+      <obj_property name="ElementShortName">start_pulse_dly</obj_property>
+      <obj_property name="ObjectShortName">start_pulse_dly</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Uart_data_ready_inst/uart_done_posedge" type="logic">
+      <obj_property name="ElementShortName">uart_done_posedge</obj_property>
+      <obj_property name="ObjectShortName">uart_done_posedge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Uart_data_ready_inst/start_pulse_posedge" type="logic">
+      <obj_property name="ElementShortName">start_pulse_posedge</obj_property>
+      <obj_property name="ObjectShortName">start_pulse_posedge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Uart_data_ready_inst/o_uart_trig" type="logic">
+      <obj_property name="ElementShortName">o_uart_trig</obj_property>
+      <obj_property name="ObjectShortName">o_uart_trig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/ipUartRx" type="logic">
+      <obj_property name="ElementShortName">ipUartRx</obj_property>
+      <obj_property name="ObjectShortName">ipUartRx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/opUartTx" type="logic">
+      <obj_property name="ElementShortName">opUartTx</obj_property>
+      <obj_property name="ObjectShortName">opUartTx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Neural_network_inst/raw_sig" type="array">
+      <obj_property name="ElementShortName">raw_sig[25:0]</obj_property>
+      <obj_property name="ObjectShortName">raw_sig[25:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Neural_network_inst/raw_valid" type="logic">
+      <obj_property name="ElementShortName">raw_valid</obj_property>
+      <obj_property name="ObjectShortName">raw_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Neural_network_inst/nn_done" type="logic">
+      <obj_property name="ElementShortName">nn_done</obj_property>
+      <obj_property name="ObjectShortName">nn_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Neural_network_inst/output_y" type="array">
+      <obj_property name="ElementShortName">output_y[1:0]</obj_property>
+      <obj_property name="ObjectShortName">output_y[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Correlation_Top/u_Correlation_Top/Neural_network_inst/op_led" type="array">
+      <obj_property name="ElementShortName">op_led[3:0]</obj_property>
+      <obj_property name="ObjectShortName">op_led[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,260 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date             : Thu Oct  1 11:34:18 2026
+| Host             : whr running 64-bit major release  (build 9200)
+| Command          : report_power -file Correlation_Top_power_routed.rpt -pb Correlation_Top_power_summary_routed.pb -rpx Correlation_Top_power_routed.rpx
+| Design           : Correlation_Top
+| Device           : xc7a100tfgg484-2
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.590        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.492        |
+| Device Static (W)        | 0.098        |
+| Effective TJA (C/W)      | 2.7          |
+| Max Ambient (C)          | 83.4         |
+| Junction Temperature (C) | 26.6         |
+| Confidence Level         | Medium       |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |     0.062 |        5 |       --- |             --- |
+| Slice Logic             |     0.107 |    56909 |       --- |             --- |
+|   LUT as Logic          |     0.086 |    18134 |     63400 |           28.60 |
+|   CARRY4                |     0.016 |     3340 |     15850 |           21.07 |
+|   Register              |     0.005 |    20662 |    126800 |           16.29 |
+|   F7/F8 Muxes           |    <0.001 |     1187 |     63400 |            1.87 |
+|   LUT as Shift Register |    <0.001 |     4896 |     19000 |           25.77 |
+|   Others                |     0.000 |     2004 |       --- |             --- |
+| Signals                 |     0.089 |    31130 |       --- |             --- |
+| Block RAM               |     0.003 |      1.5 |       135 |            1.11 |
+| MMCM                    |     0.105 |        1 |         6 |           16.67 |
+| DSPs                    |     0.122 |      174 |       240 |           72.50 |
+| I/O                     |     0.002 |        7 |       285 |            2.46 |
+| XADC                    |     0.002 |        1 |       --- |             --- |
+| Static Power            |     0.098 |          |           |                 |
+| Total                   |     0.590 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint    |       1.000 |     0.399 |       0.384 |      0.016 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.077 |       0.058 |      0.018 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |       NA    | Unspecified | NA         |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc    |       1.800 |     0.021 |       0.001 |      0.020 |       NA    | Unspecified | NA         |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                               | Action                                                                                                     |
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                      |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                |                                                                                                            |
+| I/O nodes activity          | Medium     | More than 5% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes        | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                          |                                                                                                            |
+|                             |            |                                                       |                                                                                                            |
+| Overall confidence level    | Medium     |                                                       |                                                                                                            |
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 2.7                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++--------------------+----------------------------------------+-----------------+
+| Clock              | Domain                                 | Constraint (ns) |
++--------------------+----------------------------------------+-----------------+
+| clk_out1_clk_wiz_0 | clk_wiz_0_inst/inst/clk_out1_clk_wiz_0 |            10.0 |
+| clkfbout_clk_wiz_0 | clk_wiz_0_inst/inst/clkfbout_clk_wiz_0 |            20.0 |
+| ipClk              | ipClk                                  |            20.0 |
++--------------------+----------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-----------------------------------------+-----------+
+| Name                                    | Power (W) |
++-----------------------------------------+-----------+
+| Correlation_Top                         |     0.492 |
+|   Correltor_Inst                        |     0.164 |
+|     Delay1_Inst                         |     0.001 |
+|     Delay3_Inst                         |     0.001 |
+|     label_i[0].MultiplyAccumulate_inst  |     0.002 |
+|     label_i[10].MultiplyAccumulate_inst |     0.002 |
+|     label_i[11].MultiplyAccumulate_inst |     0.002 |
+|     label_i[12].MultiplyAccumulate_inst |     0.002 |
+|     label_i[13].MultiplyAccumulate_inst |     0.002 |
+|     label_i[14].MultiplyAccumulate_inst |     0.002 |
+|     label_i[15].MultiplyAccumulate_inst |     0.002 |
+|     label_i[16].MultiplyAccumulate_inst |     0.002 |
+|     label_i[17].MultiplyAccumulate_inst |     0.002 |
+|     label_i[18].MultiplyAccumulate_inst |     0.002 |
+|     label_i[19].MultiplyAccumulate_inst |     0.002 |
+|     label_i[1].MultiplyAccumulate_inst  |     0.002 |
+|     label_i[20].MultiplyAccumulate_inst |     0.002 |
+|     label_i[21].MultiplyAccumulate_inst |     0.002 |
+|     label_i[22].MultiplyAccumulate_inst |     0.002 |
+|     label_i[23].MultiplyAccumulate_inst |     0.002 |
+|     label_i[24].MultiplyAccumulate_inst |     0.002 |
+|     label_i[25].MultiplyAccumulate_inst |     0.002 |
+|     label_i[26].MultiplyAccumulate_inst |     0.002 |
+|     label_i[27].MultiplyAccumulate_inst |     0.002 |
+|     label_i[28].MultiplyAccumulate_inst |     0.002 |
+|     label_i[29].MultiplyAccumulate_inst |     0.002 |
+|     label_i[2].MultiplyAccumulate_inst  |     0.002 |
+|     label_i[30].MultiplyAccumulate_inst |     0.002 |
+|     label_i[31].MultiplyAccumulate_inst |     0.002 |
+|     label_i[32].MultiplyAccumulate_inst |     0.002 |
+|     label_i[33].MultiplyAccumulate_inst |     0.002 |
+|     label_i[34].MultiplyAccumulate_inst |     0.002 |
+|     label_i[35].MultiplyAccumulate_inst |     0.002 |
+|     label_i[36].MultiplyAccumulate_inst |     0.002 |
+|     label_i[37].MultiplyAccumulate_inst |     0.001 |
+|     label_i[38].MultiplyAccumulate_inst |     0.002 |
+|     label_i[39].MultiplyAccumulate_inst |     0.002 |
+|     label_i[3].MultiplyAccumulate_inst  |     0.002 |
+|     label_i[40].MultiplyAccumulate_inst |     0.002 |
+|     label_i[41].MultiplyAccumulate_inst |     0.001 |
+|     label_i[42].MultiplyAccumulate_inst |     0.002 |
+|     label_i[43].MultiplyAccumulate_inst |     0.002 |
+|     label_i[44].MultiplyAccumulate_inst |     0.001 |
+|     label_i[45].MultiplyAccumulate_inst |     0.001 |
+|     label_i[46].MultiplyAccumulate_inst |     0.001 |
+|     label_i[47].MultiplyAccumulate_inst |     0.001 |
+|     label_i[48].MultiplyAccumulate_inst |     0.001 |
+|     label_i[49].MultiplyAccumulate_inst |     0.001 |
+|     label_i[4].MultiplyAccumulate_inst  |     0.002 |
+|     label_i[50].MultiplyAccumulate_inst |     0.001 |
+|     label_i[51].MultiplyAccumulate_inst |     0.001 |
+|     label_i[52].MultiplyAccumulate_inst |     0.001 |
+|     label_i[53].MultiplyAccumulate_inst |     0.001 |
+|     label_i[54].MultiplyAccumulate_inst |     0.001 |
+|     label_i[55].MultiplyAccumulate_inst |     0.001 |
+|     label_i[56].MultiplyAccumulate_inst |     0.001 |
+|     label_i[57].MultiplyAccumulate_inst |     0.001 |
+|     label_i[58].MultiplyAccumulate_inst |     0.001 |
+|     label_i[59].MultiplyAccumulate_inst |     0.001 |
+|     label_i[5].MultiplyAccumulate_inst  |     0.002 |
+|     label_i[60].MultiplyAccumulate_inst |     0.001 |
+|     label_i[61].MultiplyAccumulate_inst |     0.001 |
+|     label_i[62].MultiplyAccumulate_inst |     0.001 |
+|     label_i[63].MultiplyAccumulate_inst |     0.001 |
+|     label_i[64].MultiplyAccumulate_inst |     0.001 |
+|     label_i[65].MultiplyAccumulate_inst |     0.001 |
+|     label_i[66].MultiplyAccumulate_inst |     0.001 |
+|     label_i[67].MultiplyAccumulate_inst |     0.001 |
+|     label_i[68].MultiplyAccumulate_inst |     0.001 |
+|     label_i[69].MultiplyAccumulate_inst |     0.001 |
+|     label_i[6].MultiplyAccumulate_inst  |     0.002 |
+|     label_i[70].MultiplyAccumulate_inst |     0.001 |
+|     label_i[71].MultiplyAccumulate_inst |     0.001 |
+|     label_i[72].MultiplyAccumulate_inst |     0.001 |
+|     label_i[73].MultiplyAccumulate_inst |     0.001 |
+|     label_i[74].MultiplyAccumulate_inst |     0.001 |
+|     label_i[75].MultiplyAccumulate_inst |     0.001 |
+|     label_i[76].MultiplyAccumulate_inst |     0.001 |
+|     label_i[77].MultiplyAccumulate_inst |     0.001 |
+|     label_i[78].MultiplyAccumulate_inst |     0.001 |
+|     label_i[79].MultiplyAccumulate_inst |     0.001 |
+|     label_i[7].MultiplyAccumulate_inst  |     0.002 |
+|     label_i[80].MultiplyAccumulate_inst |     0.001 |
+|     label_i[81].MultiplyAccumulate_inst |     0.001 |
+|     label_i[82].MultiplyAccumulate_inst |     0.001 |
+|     label_i[83].MultiplyAccumulate_inst |     0.001 |
+|     label_i[84].MultiplyAccumulate_inst |     0.001 |
+|     label_i[85].MultiplyAccumulate_inst |     0.001 |
+|     label_i[86].MultiplyAccumulate_inst |     0.001 |
+|     label_i[87].MultiplyAccumulate_inst |     0.001 |
+|     label_i[88].MultiplyAccumulate_inst |     0.001 |
+|     label_i[89].MultiplyAccumulate_inst |     0.001 |
+|     label_i[8].MultiplyAccumulate_inst  |     0.002 |
+|     label_i[9].MultiplyAccumulate_inst  |     0.002 |
+|   Neural_network_inst                   |     0.218 |
+|     nn_module_inst                      |     0.201 |
+|       act1                              |     0.006 |
+|       act2                              |     0.004 |
+|       bram2                             |     0.002 |
+|       bram3                             |     0.001 |
+|       fc1                               |     0.111 |
+|       fc2                               |     0.062 |
+|       fc3                               |     0.002 |
+|     u_nn_preprocess                     |     0.017 |
+|   Xadc_inst                             |     0.002 |
+|   clk_wiz_0_inst                        |     0.106 |
+|     inst                                |     0.106 |
++-----------------------------------------+-----------+
+
+
