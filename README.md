@@ -15,6 +15,7 @@
 | 实现报告（build） | `project_1/project_1.runs/impl_1/*.rpt` |
 | 上板工程与烧录文件（board） | `project_1/project_1.xpr`；`project_1/project_1.runs/impl_1/Correlation_Top.bit`、`Correlation_Top.bin` |
 | XADC 数据工作簿（data） | `生成XADC采集数据.xlsx` |
+| 技能包（skill） | `skill/README.md` |
 
 ## 复现步骤
 
